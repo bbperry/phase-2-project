@@ -16,7 +16,7 @@ function BookCard({ book }) {
       <span class="date">by {author}</span>
     </div>
     <div class="description">
-      This book is helpfulfor {category}
+      This book is helpful for {category}
     </div>
   </div>
   <div class="extra content">
