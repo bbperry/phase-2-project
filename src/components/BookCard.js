@@ -1,25 +1,27 @@
 import React, { useState } from 'react';
-
-
+// import { Card } from "semantic-ui-react";
 
 function BookCard({ book }) {
 
   const { title, author, category, image } = book;
 
   return (
-    <li className="card">
-      <div className="project-image">
-        <img src={image} alt={title} />
-      </div>
-
-      <div className="details">
-        <h4>{title} by {author}</h4>
-        <p>{category}</p>
-        <p>
-        </p>
-      </div>
-
-    </li>
+    <div class="ui card">
+  <div class="image">
+    <img src={image}/>
+  </div>
+  <div class="content">
+    <a class="header">{title}</a>
+    <div class="meta">
+      <span class="date">by {author}</span>
+    </div>
+    <div class="description">
+      This book is helpfulfor {category}
+    </div>
+  </div>
+  <div class="extra content">
+  </div>
+</div>
   );
 }
 
