@@ -50,3 +50,21 @@
   transition: background-color 0.2s;
   line-height: 1;
 }
+
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: turquoise;
+  align:"center";
+}
+
+.container * {
+  box-sizing: border-box;
+  
+}
+
+.container label {
+  color: white;
+}

@@ -2,6 +2,7 @@ import './App.css';
 import React, { useEffect, useState } from 'react';
 import Header from './components/Header.js';
 import BookList from './components/BookList.js';
+import BookForm from './components/BookForm.js';
 
 function App() {
   const [books, setBooks] = useState([]);
@@ -20,7 +21,9 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <BookForm handleAddBook={handleAddBook}/>
       <BookList books={books} />
+      
       
     </div>
   );
