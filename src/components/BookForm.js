@@ -1,36 +1,53 @@
 import React, {useState} from 'react';
 
-function BookForm({handleAddBook}) {
+function BookForm({books, handleAddBook}) {
 
-    const [title, setTitle] = useState("");
-    const [author, setAuthor] = useState("");
-    const [category, setCategory] = useState("");
-    const [image, setImage] = useState("");
-
-
-  function handleSubmit(e) {
-    e.preventDefault()
-
-    const formData = {
-      title,
-      author,
-      category,
-      image,
-    }
+    const [addTitle, setAddTitle] = useState("");
+    const [addAuthor, setAddAuthor] = useState("");
+    const [addCategory, setAddCategory] = useState("");
+    const [addImage, setAddImage] = useState("");
 
 
-  fetch("http://localhost:3000/projects", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(formData),
+//   function handleSubmit(e) {
+//     e.preventDefault()
+
+//     const formData = {
+//       id: books.length + 1,
+//       title,
+//       author,
+//       category,
+//       image,
+//     }
+
+
+//   fetch("http://localhost:3000/projects", {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify(formData),
+//   })
+//     .then((r) => r.json())
+//     .then((newBook) => {
+//       handleAddBook(newBook);
+//     });
+// }
+
+function handleSubmit(e) {
+  e.preventDefault()
+  handleAddBook({
+    id: books.length + 1,
+    title: addTitle,
+    author: addAuthor,
+    category: addCategory,
+    image: addImage,
   })
-    .then((r) => r.json())
-    .then((newBook) => {
-      handleAddBook(newBook);
-    });
+  setAddTitle('')
+  setAddAuthor('')
+  setAddCategory('')
+  setAddImage('')
 }
+
 
 
   return (
@@ -42,32 +59,32 @@ function BookForm({handleAddBook}) {
               placeholder="Insert Title"
               type="text"
               title="title"
-              value={title}
-              onChange={(event) => setTitle(event.target.value)}
+              value={addTitle}
+              onChange={(event) => setAddTitle(event.target.value)}
               />
-              {title.length === 0 ? (
+              {addTitle.length === 0 ? (
           <p style={{ color: "red" }}>You must provide a name</p>
         ) : null}
         <label htmlFor="author">Author</label>
         <input
         placeholder="Insert Author"
           type="text"
-          value={author}
-          onChange={(event) => setAuthor(event.target.value)}
+          value={addAuthor}
+          onChange={(event) => setAddAuthor(event.target.value)}
         />
         <label htmlFor="category">Category</label>
         <input
         placeholder="Category"
           type="text"
-          value={category}
-          onChange={(event) => setCategory(event.target.value)}
+          value={addCategory}
+          onChange={(event) => setAddCategory(event.target.value)}
         />
         <label htmlFor="image">Image</label>
         <input
         placeholder="Image URL"
           type="text"
-          value={image}
-          onChange={(event) => setImage(event.target.value)}
+          value={addImage}
+          onChange={(event) => setAddImage(event.target.value)}
         />
         <button>Add Book</button>
         </form>

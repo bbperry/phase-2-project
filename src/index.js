@@ -5,10 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'semantic-ui-css/semantic.min.css'
 
+import { BrowserRouter, Route } from "react-router-dom"
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+  {/* // <React.StrictMode> */}
+    <Route path="/">
+      <App />
+    </Route>
+  {/* </React.StrictMode>, */}
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

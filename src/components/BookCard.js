@@ -6,7 +6,7 @@ function BookCard({ book }) {
   const { title, author, category, image } = book;
 
   return (
-    <div class="ui card huge">
+    <div class="cards ui card">
   <div class="image">
     <img src={image}/>
   </div>
