@@ -2,73 +2,227 @@
   "books": [
     {
       "id": 1,
-      "title": "The Very Hungry Caterpillar",
-      "author": "Eric Carle",
-      "category": "food",
-      "image": "https://covers.openlibrary.org/b/isbn/0399226907-M.jpg"
+      "title": "In The Small Small Pond",
+      "author": "Denise Fleming",
+      "category": "Phonology & Articulation",
+      "image": "https://covers.openlibrary.org/b/isbn/0805059830-L.jpg"
     },
     {
       "id": 2,
-      "title": "Goodnight Moon",
-      "author": "Margaret Brown",
-      "category": "food",
-      "image": "https://covers.openlibrary.org/b/isbn/0399226907-M.jpg"
+      "title": "Dragons Love Tacos",
+      "author": "Adam Rubin",
+      "category": "Phonology & Articulation",
+      "image": "https://covers.openlibrary.org/b/isbn/0525428887-L.jpg"
     },
     {
       "id": 3,
-      "title": "Where the Wild Things Are",
-      "author": "Maurice Sendak",
-      "category": "food",
-      "image": "https://covers.openlibrary.org/b/isbn/0399226907-M.jpg"
+      "title": "The Very Busy Spider",
+      "author": "Eric Carle",
+      "category": "Phonology & Articulation",
+      "image": "https://covers.openlibrary.org/b/isbn/0399229191-L.jpg"
     },
     {
       "id": 4,
-      "title": "The Cat in the Hat",
-      "author": "Dr. Seuss",
-      "category": "food",
-      "image": "https://covers.openlibrary.org/b/isbn/0399226907-M.jpg"
+      "title": "The Tiny Seed",
+      "author": "Eric Carle",
+      "category": "Phonology & Articulation",
+      "image": "https://covers.openlibrary.org/b/isbn/1481435752-L.jpg"
     },
     {
       "id": 5,
-      "title": "Charlotte’s Web",
-      "author": "E. B. White",
-      "category": "food",
-      "image": "https://covers.openlibrary.org/b/isbn/0399226907-M.jpg"
+      "title": "Swimmy",
+      "author": "Leo Lionni",
+      "category": "Phonology & Articulation",
+      "image": "https://covers.openlibrary.org/b/isbn/0399555501-L.jpg"
     },
     {
       "id": 6,
-      "title": "Harold and the Purple Crayon",
-      "author": "Crockett Johnson",
-      "category": "food",
-      "image": "https://covers.openlibrary.org/b/isbn/0399226907-M.jpg"
+      "title": "Yummy Yucky",
+      "author": "Leslie Particelli",
+      "category": "Phonology & Articulation",
+      "image": "https://covers.openlibrary.org/b/isbn/0763619507-L.jpg"
     },
     {
       "id": 7,
-      "title": "Charlie and the Chocolate Factory",
-      "author": "Roald Dahl",
-      "category": "food",
-      "image": "https://covers.openlibrary.org/b/isbn/0399226907-M.jpg"
+      "title": "Froggy Learns to Swim",
+      "author": "Jonathan London",
+      "category": "Phonology & Articulation",
+      "image": "https://covers.openlibrary.org/b/isbn/0140553126-L.jpg"
     },
     {
       "id": 8,
-      "title": "Little Women",
-      "author": "Louis May Alcott",
-      "category": "food",
-      "image": "https://covers.openlibrary.org/b/isbn/0399226907-M.jpg"
+      "title": "Froggy Goes to Camp",
+      "author": "Jonathan London",
+      "category": "Phonology & Articulation",
+      "image": "https://covers.openlibrary.org/b/isbn/0142416045-L.jpg"
     },
     {
       "id": 9,
-      "title": "Harry Potter and the Philosopher’s Stone",
-      "author": "J. K. Rowling",
-      "category": "food",
-      "image": "https://covers.openlibrary.org/b/isbn/0399226907-M.jpg"
+      "title": "Froggy Gets Dressed",
+      "author": "Jonathan London",
+      "category": "Phonology & Articulation",
+      "image": "https://covers.openlibrary.org/b/isbn/0140544577-L.jpg"
     },
     {
       "id": 10,
-      "title": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
-      "author": "C.S.Lewis",
+      "title": "Goodnight Moon",
+      "author": "Margaret Wise Brown",
+      "category": "Phonology & Articulation",
+      "image": "https://covers.openlibrary.org/b/isbn/0064430170-L.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Little Blue and Little Yellow",
+      "author": "Leo Lionni",
+      "category": "Phonology & Articulation",
+      "image": "https://covers.openlibrary.org/b/isbn/0399555536-L.jpg"
+    },
+    {
+      "id": 12,
+      "title": "One Fish Two Fish Red Fish Blue Fish",
+      "author": "Dr. Suess",
+      "category": "Phonology & Articulation",
+      "image": "https://covers.openlibrary.org/b/isbn/0375833870-L.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Over and Under the Pond",
+      "author": "Kate Messner",
+      "category": "Concepts & Prepositions",
+      "image": "https://covers.openlibrary.org/b/isbn/9781452145426-L.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Hop On Pop",
+      "author": "Dr. Suess",
+      "category": "Phonology & Articulation",
+      "image": "https://covers.openlibrary.org/b/isbn/9780375844836-L.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Rosies Walk",
+      "author": "Pat Hutchins",
+      "category": "Concepts & Prepositions",
+      "image": "https://covers.openlibrary.org/b/isbn/0020437501-L.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Which Witch Is Which",
+      "author": "Judi Barrett",
+      "category": "Prediction & Inference",
+      "image": "https://covers.openlibrary.org/b/isbn/068982940X-L.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Q Is for Duck: An Alphabet Guessing Game",
+      "author": "Mary Elting and Michael Folsom",
+      "category": "Phonological Awareness & Literacy Development",
+      "image": "https://covers.openlibrary.org/b/isbn/0618574123-L.jpg"
+    },
+    {
+      "id": 18,
+      "title": "A Snake is Totally Tail",
+      "author": "Judi Barrett",
+      "category": "Phonological Awareness & Literacy Development",
+      "image": "https://covers.openlibrary.org/b/isbn/1416968458-L.jpg"
+    },
+    {
+      "id": 19,
+      "title": "Take Away the A",
+      "author": "Michael Scoffer",
+      "category": "Phonological Awareness & Literacy Development",
+      "image": "https://covers.openlibrary.org/b/isbn/1783443448-L.jpg"
+    },
+    {
+      "id": 20,
+      "title": "Tomorrow's Alphabet",
+      "author": "George Shannon",
+      "category": "Phonological Awareness & Literacy Development",
+      "image": "https://covers.openlibrary.org/b/isbn/9780688164249-L.jpg"
+    },
+    {
+      "id": 21,
+      "title": "Dear Deer a Book of Homophones",
+      "author": "Gene Barretta",
+      "category": "Phonological Awareness & Literacy Development",
+      "image": "https://m.media-amazon.com/images/I/51NC4rbT0sL._SL160_.jpg"
+    },
+    {
+      "id": 23,
+      "title": "All the Ways To Be Smart",
+      "author": "Danna Bell",
+      "category": "Diversity & Inclusion",
+      "image": "https://m.media-amazon.com/images/I/512wmoX8qJL._SL160_.jpg"
+    },
+    {
+      "id": 24,
+      "title": "Everything and Everywhere",
+      "author": "Marc Martin",
+      "category": "Diversity & Inclusion",
+      "image": "https://m.media-amazon.com/images/I/51T+aJ-ZoAL._SL160_.jpg"
+    },
+    {
+      "id": 25,
+      "title": "Before After",
+      "author": "Anne Margot Ramstein and Matthias Aregui",
+      "category": "Prediction & Inference",
+      "image": "https://covers.openlibrary.org/b/isbn/0763676217-L.jpg"
+    },
+    {
+      "id": 26,
+      "title": "Who What Where",
+      "author": "Oliver Tallec",
+      "category": "Prediction & Inference",
+      "image": "https://m.media-amazon.com/images/I/41Bnv+l1ryL._SL160_.jpg"
+    },
+    {
+      "id": 27,
+      "title": "The Very Hungry Caterpillar",
+      "author": "Eric Carle",
+      "category": "Preschool Language",
+      "image": "https://covers.openlibrary.org/b/isbn/0399208534-L.jpg"
+    },
+    {
+      "id": 28,
+      "title": "The Very Busy Spider",
+      "author": "Floyd Cooper",
+      "category": "Preschool Language",
+      "image": "https://images.isbndb.com/covers/82/09/9781479558209.jpg"
+    },
+    {
+      "id": 29,
+      "title": "In My Heart",
+      "author": "Jo Witek",
+      "category": "Social Emotional Learning",
+      "image": "https://covers.openlibrary.org/b/isbn/1419713108-M.jpg"
+    },
+    {
+      "id": 30,
+      "title": "Zen Pig: The Art of Gratitude",
+      "author": "Mark Brown",
+      "category": "Social Emotional Learning",
+      "image": "https://m.media-amazon.com/images/I/312XxDwshuL._SL160_.jpg"
+    },
+    {
+      "id": 31,
+      "title": "I Dissent",
+      "author": "Debbie Levy",
       "category": "food",
-      "image": "https://covers.openlibrary.org/b/isbn/0399226907-M.jpg"
+      "image": "https://m.media-amazon.com/images/I/61cMHn6MxYL._SL160_.jpg"
+    },
+    {
+      "id": 32,
+      "title": "Change Sings",
+      "author": "Amanda Gorman",
+      "category": "Social Justice",
+      "image": "https://covers.openlibrary.org/b/isbn/0593203224-L.jpg"
+    },
+    {
+      "id": 33,
+      "title": "Too Many Tamales",
+      "author": "Gary Soto",
+      "category": "Special Occasions",
+      "image": "https://covers.openlibrary.org/b/isbn/0698114124-L.jpg"
     }
   ]
 }
