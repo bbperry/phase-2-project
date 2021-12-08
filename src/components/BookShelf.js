@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 
 function BookShelf() {
   return (
-    <div>
+    <div className="bookShelfDiv">
         <img className="bookShelf" src="https://www.harpgallery.com/photos/ab/bk34734nathan9.jpg" />
-    </div>
+        <img src="./book.png"/>
+      </div>
   );
 }
 

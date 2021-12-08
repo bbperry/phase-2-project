@@ -223,6 +223,13 @@
       "author": "Gary Soto",
       "category": "Special Occasions",
       "image": "https://covers.openlibrary.org/b/isbn/0698114124-L.jpg"
+    },
+    {
+      "title": "Where the Wild Things Are",
+      "author": "Maurice Sendak",
+      "category": "Rumpus & Ruckus",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Where_The_Wild_Things_Are_%28book%29_cover.jpg/250px-Where_The_Wild_Things_Are_%28book%29_cover.jpg",
+      "id": 34
     }
   ]
 }

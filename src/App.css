@@ -74,4 +74,13 @@
 .bookShelf {
   width: 50%;
   height: auto;
+  
+}
+
+.bookShelfDiv {
+  text-align: center;
+}
+
+.filterBar {
+  text-align: center;
 }

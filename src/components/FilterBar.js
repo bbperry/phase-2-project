@@ -2,7 +2,7 @@ import React from 'react';
 
 function FilterBar({ setBookSearch, setSelectedCategory, selectedCategory }) {
   return (
-    <div>
+    <div className="filterBar">
       <div class="ui icon input">
         <input
           class="ui search"
@@ -19,7 +19,7 @@ function FilterBar({ setBookSearch, setSelectedCategory, selectedCategory }) {
         value={selectedCategory}
         onChange={(e) => setSelectedCategory(e.target.value)}
       >
-        <option value="All">All</option>
+        <option value="All">Choose a category</option>
         <option value="Phonology & Articulation">
           Phonology & Articulation
         </option>

@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   function handleAddBook(newBook) {
-    const newBookArray = [newBook, ...books];
+    const newBookArray = [ ...books, newBook ];
     setBooks(newBookArray);
   }
 

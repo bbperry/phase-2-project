@@ -19,7 +19,8 @@ function BookList({ books }) {
   //   return book.category === category;
   // })
 
-  const booksToDisplay = books.filter((book) => {
+  const booksToDisplay = books
+  .filter((book) => {
       if (selectedCategory === 'All') return true;
 
       return book.category === selectedCategory;
