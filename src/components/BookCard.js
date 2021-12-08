@@ -23,7 +23,7 @@ function BookCard({ book, handleAddFavorite }) {
   </div>
   <div class="extra content">
     <p><Link to={path} >Details</Link></p>
-    <button onClick={()=>{handleAddFavorite(book)}} >Add to Favorites</button>
+    <button onClick={()=>{handleAddFavorite(book)}} >Add to Todays Lesson</button>
   </div>
 </div>
   );

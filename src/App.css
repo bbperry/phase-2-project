@@ -53,6 +53,10 @@
   line-height: 1;
 } */
 
+.body {
+  background-color: peachpuff
+}
+
 .header {
   text-decoration: underline;
 }
@@ -99,23 +103,42 @@
   
 }
 
+.bookShelfDiv h3 {
+  color: white;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
 .bookShelfDiv {
   text-align: center;
+  height: 300px;
+  width: 300px;
+  background-color: rgb(250, 178, 107);
+  border-radius: 20px;
+  border: solid, yellow;
+  color: yellow;
+  font-weight: bold;
+  padding: 15px;
 }
 
 .filterBar {
   text-align: center;
+  margin: 15px;
 }
 
-.empty-plate {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD9N2xlq_uDuERj6qJ5yCryByisuDle0el_Q&usqp=CAU");
+.book {
+  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD9N2xlq_uDuERj6qJ5yCryByisuDle0el_Q&usqp=CAU"); */
   /* background-size: contain; */
-  background-repeat: no-repeat;
-  /* background-position: center;
-  /* transform: rotateX(50deg);
-  height: 100px;
-  width: 100px; */
-  /* position: absolute; */
-  /* left: 300px; */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  /* transform: rotateX(50deg); */
+  /* max-width: 100%;
+  height: auto; */
+  
+  /* position: absolute;
+  left: 300px */
 }
 
+.bookListContainer {
+  padding: 30px;
+}

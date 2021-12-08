@@ -5,8 +5,10 @@ import { Link } from 'react-router-dom';
 function BookShelf({books}) {
   return (
     <div className="bookShelfDiv">
-        <img className="bookShelf" src="https://www.harpgallery.com/photos/ab/bk34734nathan9.jpg" />
-        <div className="book"> {books.map(book=> (
+        {/* <img className="bookShelf" src="https://www.harpgallery.com/photos/ab/bk34734nathan9.jpg" /> */}
+          <h3>Today's Lesson</h3>
+        <div className="book"></div>
+          <div> {books.map(book=> (
       <FavoriteList
       key={book.id}
       book={book}
