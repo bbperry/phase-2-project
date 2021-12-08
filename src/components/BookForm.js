@@ -65,8 +65,8 @@ function BookForm({ handleAddBook }) {
 
   return (
     <section class="container">
-      <form className="form" onSubmit={handleSubmit}>
-        <h4>Add a New Book</h4>
+      <form class="ui form" onSubmit={handleSubmit}>
+        <h4 id="formH" class="ui dividing header">Add a New Book</h4>
         <label htmlFor="title">Title</label>
         <input
           required
@@ -97,6 +97,7 @@ function BookForm({ handleAddBook }) {
         /> */}
         <label htmlFor="category">Category</label>
         <select
+          class="ui fluid dropdown"
           required
           name="filter"
           placeholder="select a category"

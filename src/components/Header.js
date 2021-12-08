@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 function Header() {
   return (
     <header id="mainHeader">
-      <h1>
-        <span>Children's Bookshelf</span>
+      <h1 >
+        <span >Children's Bookshelf</span>
       </h1>
       <nav >
       <Link class="ui animated fade button teal" tabindex="0" to="/books">

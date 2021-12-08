@@ -4,7 +4,8 @@ import BookShelf from './BookShelf.js';
 import FilterBar from './FilterBar.js'
 import { Card } from 'semantic-ui-react';
 
-function BookList({ books }) {
+
+function BookList({ books, handleAddFavorite }) {
   const [bookSearch, setBookSearch] = useState("")
   const [selectedCategory, setSelectedCategory] = useState('All');
 
@@ -29,7 +30,7 @@ function BookList({ books }) {
 
   return (
     <div>
-      <BookShelf />
+      <BookShelf books={books.filter((book) => book.favorite)}/>
     
       <FilterBar 
         selectedCategory={selectedCategory}
@@ -40,7 +41,9 @@ function BookList({ books }) {
 
       <Card.Group itemsPerRow={5}>
         {booksToDisplay.map((book) => (
-          <BookCard key={book.id} book={book} />
+          <BookCard key={book.id} book={book}
+          handleAddFavorite={handleAddFavorite}
+          />
         ))}
       </Card.Group>
     </div>

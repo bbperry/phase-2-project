@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
-// import { Card } from "semantic-ui-react";
+import { Link } from 'react-router-dom';
 
-function BookCard({ book }) {
+function BookCard({ book, handleAddFavorite }) {
 
-  const { title, author, category, image } = book;
+  const { title, author, category, image, id } = book;
+
+  const path = `/books/${id}`
 
   return (
-    <div class="cards ui card">
+    <div class="ui link card">
   <div class="image">
     <img src={image} alt={title}/>
   </div>
@@ -20,6 +22,8 @@ function BookCard({ book }) {
     </div>
   </div>
   <div class="extra content">
+    <p><Link to={path} >Details</Link></p>
+    <button onClick={()=>{handleAddFavorite(book)}} >Add to Favorites</button>
   </div>
 </div>
   );
