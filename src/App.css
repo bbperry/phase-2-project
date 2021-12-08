@@ -84,3 +84,16 @@
 .filterBar {
   text-align: center;
 }
+
+.empty-plate {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD9N2xlq_uDuERj6qJ5yCryByisuDle0el_Q&usqp=CAU");
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center;
+  /* transform: rotateX(50deg);
+  height: 100px;
+  width: 100px; */
+  position: absolute;
+  /* left: 300px; */
+}
+
