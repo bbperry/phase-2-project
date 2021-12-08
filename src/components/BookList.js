@@ -1,19 +1,39 @@
 import React, {useState} from 'react';
 import BookCard from './BookCard.js';
+import BookShelf from './BookShelf.js';
 import FilterBar from './FilterBar.js'
 import { Card } from 'semantic-ui-react';
 
 function BookList({ books }) {
   const [bookSearch, setBookSearch] = useState("")
+  const [selectedCategory, setSelectedCategory] = useState('All');
+
+
+
+  // const booksToDisplay = books.filter((book) => {
+  //   return book.title.toLowerCase().includes(bookSearch.toLowerCase());
+  // })
+  
+  // .filter((book) => {
+    
+  //   return book.category === category;
+  // })
 
   const booksToDisplay = books.filter((book) => {
-    return book.title.toLowerCase().includes(bookSearch.toLowerCase());
-  })
+      if (selectedCategory === 'All') return true;
+
+      return book.category === selectedCategory;
+    }).filter((book) => book.title.toLowerCase().includes(bookSearch.toLowerCase()));
+
 
   return (
     <div>
+      <BookShelf />
+    
       <FilterBar 
-        setBookSearch={setBookSearch} 
+        selectedCategory={selectedCategory}
+        setBookSearch={setBookSearch}
+        setSelectedCategory={setSelectedCategory} 
         books={books}
       />
 

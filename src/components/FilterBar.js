@@ -1,33 +1,41 @@
-import React from "react"
-import { Select } from 'semantic-ui-react'
+import React from 'react';
 
-
-const categoryOptions = [
-  { key: 'af', value: 'af', text: 'Phonology & Articulation' },
-  { key: 'ax', value: 'ax', text: 'Concepts & Prepositions' },
-  { key: 'al', value: 'al', text: 'Albania' },
-  { key: 'dz', value: 'dz', text: 'Algeria' },
-  { key: 'as', value: 'as', text: 'American Samoa' },
-  { key: 'ad', value: 'ad', text: 'Andorra' },
-  { key: 'ao', value: 'ao', text: 'Angola' },
-  { key: 'ai', value: 'ai', text: 'Anguilla' },
-  { key: 'ag', value: 'ag', text: 'Antigua' },
-  { key: 'ar', value: 'ar', text: 'Argentina' },
-] 
-
-
-function FilterBar({ setBookSearch, books }) {
+function FilterBar({ setBookSearch, setSelectedCategory, selectedCategory }) {
   return (
-  
- <div>   
+    <div>
+      <div class="ui icon input">
+        <input
+          class="ui search"
+          type="text"
+          placeholder="Search..."
+          onChange={(e) => setBookSearch(e.target.value)}
+        />
+        <i class="search icon"></i>
+      </div>
 
-      <input
-        type="text"
-        placeholder="Search..."
-        onChange={(e) => setBookSearch(e.target.value)}
-      />
-<Select placeholder='Select your Category' options={categoryOptions} />
-
+      <select
+        class="ui animated fade button teal"
+        name="filter"
+        value={selectedCategory}
+        onChange={(e) => setSelectedCategory(e.target.value)}
+      >
+        <option value="All">All</option>
+        <option value="Phonology & Articulation">
+          Phonology & Articulation
+        </option>
+        <option value="Concepts & Prepositions">Concepts & Prepositions</option>
+        <option value="Prediction & Inference">Prediction & Inference</option>
+        <option value="Phonological Awareness & Literacy Development">
+          Phonological Awareness & Literacy Development
+        </option>
+        <option value="Diversity & Inclusion">Diversity & Inclusion</option>
+        <option value="Preschool Language">Preschool Language</option>
+        <option value="Social Emotional Learning">
+          Social Emotional Learning
+        </option>
+        <option value="Special Occasions">Special Occasions</option>
+        <option value="Social Justice">Social Justice</option>
+      </select>
     </div>
   );
 }

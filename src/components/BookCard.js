@@ -8,7 +8,7 @@ function BookCard({ book }) {
   return (
     <div class="cards ui card">
   <div class="image">
-    <img src={image}/>
+    <img src={image} alt={title}/>
   </div>
   <div class="content">
     <a class="header">{title}</a>

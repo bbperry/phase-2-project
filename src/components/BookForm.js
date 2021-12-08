@@ -62,9 +62,9 @@ function handleSubmit(e) {
               value={addTitle}
               onChange={(event) => setAddTitle(event.target.value)}
               />
-              {addTitle.length === 0 ? (
+              {/* {addTitle.length === 0 ? (
           <p style={{ color: "red" }}>You must provide a name</p>
-        ) : null}
+        ) : null} */}
         <label htmlFor="author">Author</label>
         <input
         placeholder="Insert Author"

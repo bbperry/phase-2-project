@@ -70,3 +70,8 @@
 .container label {
   color: white;
 }
+
+.bookShelf {
+  width: 50%;
+  height: auto;
+}
