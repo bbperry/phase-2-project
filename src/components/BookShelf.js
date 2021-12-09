@@ -2,7 +2,7 @@ import React from 'react';
 import FavoriteList from './FavoriteList'
 import { Link } from 'react-router-dom';
 
-function BookShelf({books}) {
+function BookShelf({books, onRemoveFavorite}) {
   return (
     <div className="bookShelfDiv">
         {/* <img className="bookShelf" src="https://www.harpgallery.com/photos/ab/bk34734nathan9.jpg" /> */}
@@ -12,7 +12,7 @@ function BookShelf({books}) {
       <FavoriteList
       key={book.id}
       book={book}
-        
+      onRemoveFavorite={onRemoveFavorite}
       />
         ))}
       </div>

@@ -14,6 +14,7 @@ function FilterBar({ setBookSearch, setSelectedCategory, selectedCategory }) {
       </div>
 
       <select
+        id="filter"
         class="ui animated fade button teal"
         name="filter"
         value={selectedCategory}

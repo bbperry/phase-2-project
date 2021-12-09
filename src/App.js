@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Header from './components/Header.js';
 import BookList from './components/BookList.js';
 import BookForm from './components/BookForm.js';
+import Home from './components/Home.js'
 import BookDetail from './components/BookDetail.js'
 import { Switch, Route } from 'react-router-dom';
 
@@ -28,6 +29,14 @@ function App() {
     );
   }
 
+  function handleRemoveFavorite(favorite) {
+    setBooks(
+      books.map((book) =>
+        book.id === favorite.id ? { ...book, favorite: false } : book
+      )
+    );
+  }
+
   return (
     <div className="App">
       <Header />
@@ -41,7 +50,15 @@ function App() {
 
         <Route path="/books/:id" component={BookDetail} />
 
-        <Route path="/books" component={() => <BookList books={books} handleAddFavorite={handleAddFavorite} />} />
+        <Route path="/books" component={() => <BookList 
+          books={books} 
+          onAddFavorite={handleAddFavorite} 
+          onRemoveFavorite={handleRemoveFavorite}
+          />} />
+
+        <Route path="/" component={Home}>
+          <Home />
+        </Route>  
       </Switch>
     </div>
   );

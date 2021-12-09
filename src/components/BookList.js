@@ -4,7 +4,7 @@ import BookShelf from './BookShelf.js';
 import FilterBar from './FilterBar.js';
 import { Card } from 'semantic-ui-react';
 
-function BookList({ books, handleAddFavorite }) {
+function BookList({ books, onAddFavorite, onRemoveFavorite }) {
   const [bookSearch, setBookSearch] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
 
@@ -29,7 +29,10 @@ function BookList({ books, handleAddFavorite }) {
    
   return (
     <div className="bookListContainer">
-      <BookShelf books={books.filter((book) => book.favorite)} />
+      <BookShelf 
+        books={books.filter((book) => book.favorite)} 
+        onRemoveFavorite={onRemoveFavorite}
+        />
 
       <FilterBar
         selectedCategory={selectedCategory}
@@ -43,7 +46,7 @@ function BookList({ books, handleAddFavorite }) {
           <BookCard
             key={book.id}
             book={book}
-            handleAddFavorite={handleAddFavorite}
+            onAddFavorite={onAddFavorite}
           />
         ))}
       </Card.Group>

@@ -62,7 +62,7 @@
 }
 
 #mainHeader {
-  color:green;
+  color:maroon;
   font-family: "times";
  }
 
@@ -123,6 +123,11 @@
 
 .filterBar {
   text-align: center;
+  margin: 15px;
+  padding: 5px;
+}
+
+#filter {
   margin: 15px;
 }
 
