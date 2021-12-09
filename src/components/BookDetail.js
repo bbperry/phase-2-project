@@ -9,7 +9,7 @@ function BookDetail({ handleAddDetail }) {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`http://localhost:3000/books/${id}`)
+    fetch(`https://phase-2-project-data.herokuapp.com/books/${id}`)
       .then((r) => r.json())
       .then((book) => {
         setBook(book);
@@ -19,7 +19,7 @@ function BookDetail({ handleAddDetail }) {
   function handleSubmitDetails() {
     
 
-    fetch(`http://localhost:3000/books/${book.id}`, {
+    fetch(`https://phase-2-project-data.herokuapp.com/books/${book.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

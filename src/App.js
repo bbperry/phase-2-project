@@ -11,7 +11,7 @@ function App() {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/books')
+    fetch('https://phase-2-project-data.herokuapp.com/books')
       .then((r) => r.json())
       .then(setBooks);
   }, []);

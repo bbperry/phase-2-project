@@ -9,7 +9,7 @@ function BookCard({ book, onAddFavorite, onDeleteBook }) {
 
 
   function handleAddFavorite() {
-    fetch(`http://localhost:3000/books/${book.id}`, {
+    fetch(`https://phase-2-project-data.herokuapp.com/books/${book.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -23,7 +23,7 @@ function BookCard({ book, onAddFavorite, onDeleteBook }) {
   }
 
   function handleDeleteClick() {
-    fetch(`http://localhost:3000/books/${book.id}`, {
+    fetch(`https://phase-2-project-data.herokuapp.com/books/${book.id}`, {
       method: "DELETE",
     })
       .then((r) => r.json())

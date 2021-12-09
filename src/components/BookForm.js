@@ -18,7 +18,7 @@ function BookForm({ handleAddBook }) {
     };
 
 
-    fetch('http://localhost:3000/books', {
+    fetch('https://phase-2-project-data.herokuapp.com/books', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -5,7 +5,7 @@ function FavoriteList({ book, onRemoveFavorite }) {
   const { title } = book;
 
   function handleRemoveFavorite() {
-    fetch(`http://localhost:3000/books/${book.id}`, {
+    fetch(`https://phase-2-project-data.herokuapp.com/books/${book.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
