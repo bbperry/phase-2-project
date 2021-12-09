@@ -5,7 +5,7 @@ function Header() {
   return (
     <header id="mainHeader">
       <h1 >
-        <span >Lesson Plan Bookshelf</span>
+        <Link to="/"><span className="headerFont">Children's BookShelf </span></Link>
       </h1>
       <nav >
       <Link class="ui animated fade button teal" tabindex="0" to="/books">

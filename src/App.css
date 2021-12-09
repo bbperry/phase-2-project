@@ -1,58 +1,5 @@
 
 
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.button {
-  padding: 0.75rem;
-  border: none;
-  font: inherit;
-  font-weight: 600;
-  color: inherit;
-  cursor: pointer;
-  color: var(--primary);
-  background-color: var(--background);
-  border: 2px solid var(--dark-turquoise);
-  transition: background-color 0.2s;
-  line-height: 1;
-} */
-
 .body {
   background-color: peachpuff
 }
@@ -61,14 +8,21 @@
   text-decoration: underline;
 }
 
-#mainHeader {
-  color:maroon;
-  font-family: "times";
+
+ .headerFont{
+  font-family: 'Gochi Hand', cursive;
+  font-size: 1.5em;
+  /* font-family: 'Just Me Again Down Here', cursive; */
+  color: rgb(231, 179, 82);
  }
 
- #mainHeader h1 {
-  font-family: "impact";
-  border-bottom: teal;
+ #mainHeader {
+   background-color: maroon;
+ }
+
+ #headerImage{
+   width: 50%;
+   height: auto;
  }
 
  #formH {
@@ -162,3 +116,5 @@ width: 40%;
     width: 75%;
     text-align: center;
   }
+
+  

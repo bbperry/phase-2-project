@@ -1,9 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 function FavoriteList({ book, onRemoveFavorite }) {
 
-  const { title, author, category, image, id } = book;
+  const { title } = book;
 
   function handleRemoveFavorite() {
     fetch(`http://localhost:3000/books/${book.id}`, {

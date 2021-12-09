@@ -21,6 +21,7 @@ function App() {
     setBooks(newBookArray);
   }
 
+  
   function handleAddFavorite(favorite) {
     setBooks(
       books.map((book) =>
@@ -37,14 +38,21 @@ function App() {
     );
   }
 
+  // function handleAddDetail(detail) {
+  //   setBooks(
+  //     books.map((book) =>
+  //       book.id === detail.id ? { ...book, detail } : book
+  //     )
+  //   );
+  // }
+
   function handleAddDetail(detail) {
-    setBooks(
-      books.map((book) =>
-        book.id === detail.id ? { ...book, detail: '' } : book
-      )
-    );
+    setBooks([...books, detail])
   }
 
+
+  
+// 
   function handleDeleteBook(deletedBook) {
     setBooks(books.filter(book=> book.id !== deletedBook.id))
    }
@@ -61,7 +69,12 @@ function App() {
           )}
         />
 
-        <Route path="/books/:id" component={BookDetail} onAddDetail={handleAddDetail} />
+        <Route 
+          path="/books/:id" 
+          component={() => ( <BookDetail
+           handleAddDetail={handleAddDetail}
+           books={books} 
+           /> )} />
 
         <Route path="/books" component={() => <BookList 
           books={books} 

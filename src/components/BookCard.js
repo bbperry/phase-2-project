@@ -46,10 +46,11 @@ function BookCard({ book, onAddFavorite, onDeleteBook }) {
       This book is helpful for {category}
     </div>
     <br></br><br></br>
+    <p>Additional notes:</p>
     <div>{detail}</div>
   </div>
   <div class="extra content">
-    <p><Link to={path} >Details</Link></p>
+    <p><Link to={path} >Add Notes</Link></p>
     <button onClick={()=>{handleAddFavorite(book)}} >Add to Todays Lesson</button>
   </div>
   <button class="delete" onClick={() => { if (window.confirm('Are you sure you wish to delete this item?')) handleDeleteClick(book) }}><h1>X</h1></button>

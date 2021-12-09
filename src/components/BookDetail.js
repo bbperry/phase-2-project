@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 
-function BookDetail({ onAddDetail }) {
+function BookDetail({ handleAddDetail }) {
   const [book, setBook] = useState([]);
   const [detail, setDetail] = useState('');
 
@@ -17,6 +17,8 @@ function BookDetail({ onAddDetail }) {
   }, [id]);
 
   function handleSubmitDetails() {
+    
+
     fetch(`http://localhost:3000/books/${book.id}`, {
       method: "PATCH",
       headers: {
@@ -27,7 +29,7 @@ function BookDetail({ onAddDetail }) {
       }),
     })
       .then((r) => r.json())
-      .then((updatedBook) => onAddDetail(updatedBook));
+      .then((updatedBook) => handleAddDetail(updatedBook));
   }
 
   const { title, author, category, image } = book;
@@ -42,21 +44,22 @@ function BookDetail({ onAddDetail }) {
           <h2>{title}</h2>
           <p><strong>{author}</strong></p>
           <div className="extra">
-            <span>{category}</span>
+            <p>{category}</p>
+            
+            <p>Additional Notes:</p>
+            <p>{book.detail}</p>
             <br></br>
-            <br></br>
+            
             <form class="ui form" onSubmit={handleSubmitDetails}>
         
-        <label htmlFor="title">Add Details</label>
         <input
           required
-          placeholder="add details..."
+          placeholder="add notes..."
           type="text"
-          title="title"
           value={detail}
           onChange={(event) => setDetail(event.target.value)}
         />
-        <button>Add Detail</button>
+        <button>Add Notes</button>
             </form>
             <br></br>
             <Link to="/books">Go Back!</Link>
