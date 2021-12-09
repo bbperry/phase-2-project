@@ -17,23 +17,6 @@ function BookForm({ handleAddBook }) {
       image,
     };
 
-    // function handleChange(event) {
-    //   setFormData({
-    //     ...formData,
-    //     [event.target.id]: event.target.value,
-    //   });
-    // }
-
-    //   function handleSubmit(e) {
-    //     e.preventDefault()
-
-    //     const formData = {
-    //       id: books.length + 1,
-    //       title,
-    //       author,
-    //       category,
-    //       image,
-    //     }
 
     fetch('http://localhost:3000/books', {
       method: 'POST',
@@ -48,21 +31,7 @@ function BookForm({ handleAddBook }) {
       });
   }
 
-  // function handleSubmit(e) {
-  //   e.preventDefault()
-  //   handleAddBook({
-  //     id: books.length + 1,
-  //     title: addTitle,
-  //     author: addAuthor,
-  //     category: addCategory,
-  //     image: addImage,
-  //   })
-  //   setAddTitle('')
-  //   setAddAuthor('')
-  //   setAddCategory('')
-  //   setAddImage('')
-  // }
-
+  
   return (
     <section class="container">
       <form class="ui form" onSubmit={handleSubmit}>

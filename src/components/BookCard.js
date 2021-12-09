@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function BookCard({ book, onAddFavorite }) {
+function BookCard({ book, onAddFavorite, onDeleteBook }) {
 
-  const { title, author, category, image, id } = book;
+  const { title, author, category, image, id, detail } = book;
 
   const path = `/books/${id}`
 
@@ -22,6 +22,13 @@ function BookCard({ book, onAddFavorite }) {
       .then((updatedBook) => onAddFavorite(updatedBook));
   }
 
+  function handleDeleteClick() {
+    fetch(`http://localhost:3000/books/${book.id}`, {
+      method: "DELETE",
+    })
+      .then((r) => r.json())
+      .then(() => onDeleteBook(book));
+  }
 
 
 
@@ -38,11 +45,14 @@ function BookCard({ book, onAddFavorite }) {
     <div class="description">
       This book is helpful for {category}
     </div>
+    <br></br><br></br>
+    <div>{detail}</div>
   </div>
   <div class="extra content">
     <p><Link to={path} >Details</Link></p>
     <button onClick={()=>{handleAddFavorite(book)}} >Add to Todays Lesson</button>
   </div>
+  <button class="delete" onClick={() => { if (window.confirm('Are you sure you wish to delete this item?')) handleDeleteClick(book) }}><h1>X</h1></button>
 </div>
   );
 }

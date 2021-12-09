@@ -37,6 +37,19 @@ function App() {
     );
   }
 
+  function handleAddDetail(detail) {
+    setBooks(
+      books.map((book) =>
+        book.id === detail.id ? { ...book, detail: '' } : book
+      )
+    );
+  }
+
+  function handleDeleteBook(deletedBook) {
+    setBooks(books.filter(book=> book.id !== deletedBook.id))
+   }
+
+
   return (
     <div className="App">
       <Header />
@@ -48,12 +61,13 @@ function App() {
           )}
         />
 
-        <Route path="/books/:id" component={BookDetail} />
+        <Route path="/books/:id" component={BookDetail} onAddDetail={handleAddDetail} />
 
         <Route path="/books" component={() => <BookList 
           books={books} 
           onAddFavorite={handleAddFavorite} 
           onRemoveFavorite={handleRemoveFavorite}
+          onDeleteBook={handleDeleteBook}
           />} />
 
         <Route path="/" component={Home}>
