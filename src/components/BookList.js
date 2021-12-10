@@ -23,9 +23,10 @@ function BookList({ books, onAddFavorite, onRemoveFavorite, onDeleteBook }) {
 
       return book.category === selectedCategory;
     })
-    .filter((book) =>
+    .filter((book) => 
       book.title.toLowerCase().includes(bookSearch.toLowerCase())
     )
+  
 
   return (
     <div className="bookListContainer">

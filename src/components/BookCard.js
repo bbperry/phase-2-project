@@ -43,7 +43,7 @@ function BookCard({ book, onAddFavorite, onDeleteBook }) {
       <span class="date">by {author}</span>
     </div>
     <div class="description">
-      This book is helpful for {category}
+      This book targets: {category}
     </div>
     <br></br><br></br>
     <p>Additional notes:</p>

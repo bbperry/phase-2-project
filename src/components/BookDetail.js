@@ -16,8 +16,8 @@ function BookDetail({ handleAddDetail }) {
       });
   }, [id]);
 
-  function handleSubmitDetails() {
-    
+  function handleSubmitDetails(e) {
+    e.preventDefault()
 
     fetch(`https://phase-2-project-data.herokuapp.com/books/${book.id}`, {
       method: "PATCH",
