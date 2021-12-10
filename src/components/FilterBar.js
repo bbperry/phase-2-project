@@ -7,7 +7,7 @@ function FilterBar({ setBookSearch, setSelectedCategory, selectedCategory }) {
         <input
           class="ui search"
           type="text"
-          placeholder="Search..."
+          placeholder="Search by title..."
           onChange={(e) => setBookSearch(e.target.value)}
         />
         <i class="search icon"></i>

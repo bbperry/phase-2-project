@@ -8,15 +8,6 @@ function BookList({ books, onAddFavorite, onRemoveFavorite, onDeleteBook }) {
   const [bookSearch, setBookSearch] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  // const booksToDisplay = books.filter((book) => {
-  //   return book.title.toLowerCase().includes(bookSearch.toLowerCase());
-  // })
-
-  // .filter((book) => {
-
-  //   return book.category === category;
-  // })
-
   const booksToDisplay = books
     .filter((book) => {
       if (selectedCategory === 'All') return true;
@@ -25,14 +16,14 @@ function BookList({ books, onAddFavorite, onRemoveFavorite, onDeleteBook }) {
     })
     .filter((book) =>
       book.title.toLowerCase().includes(bookSearch.toLowerCase())
-    )
+    );
 
   return (
     <div className="bookListContainer">
-      <BookShelf 
-        books={books.filter((book) => book.favorite)} 
+      <BookShelf
+        books={books.filter((book) => book.favorite)}
         onRemoveFavorite={onRemoveFavorite}
-        />
+      />
 
       <FilterBar
         selectedCategory={selectedCategory}

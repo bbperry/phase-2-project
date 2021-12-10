@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
-
 function BookDetail({ handleAddDetail }) {
   const [book, setBook] = useState([]);
   const [detail, setDetail] = useState('');
@@ -17,15 +16,13 @@ function BookDetail({ handleAddDetail }) {
   }, [id]);
 
   function handleSubmitDetails() {
-    
-
     fetch(`http://localhost:3000/books/${book.id}`, {
-      method: "PATCH",
+      method: 'PATCH',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        detail
+        detail,
       }),
     })
       .then((r) => r.json())
@@ -36,30 +33,32 @@ function BookDetail({ handleAddDetail }) {
 
   return (
     <section>
-      <div className="project-detail box">
-        <div className="project-image">
+      <div className="bookDetail">
+        <div>
           <img src={image} alt={title} />
         </div>
-        <div className="details">
+        <div>
           <h2>{title}</h2>
-          <p><strong>{author}</strong></p>
-          <div className="extra">
+          <p>
+            <strong>by {author}</strong>
+          </p>
+          <div>
             <p>{category}</p>
-            
-            <p>Additional Notes:</p>
-            <p>{book.detail}</p>
+            <div className="detailDiv">
+              <p>Additional Notes:</p>
+              <p>{book.detail}</p>
+            </div>
             <br></br>
-            
+
             <form class="ui form" onSubmit={handleSubmitDetails}>
-        
-        <input
-          required
-          placeholder="add notes..."
-          type="text"
-          value={detail}
-          onChange={(event) => setDetail(event.target.value)}
-        />
-        <button>Add Notes</button>
+              <input
+                required
+                placeholder="add notes..."
+                type="text"
+                value={detail}
+                onChange={(event) => setDetail(event.target.value)}
+              />
+              <button>Add Notes</button>
             </form>
             <br></br>
             <Link to="/books">Go Back!</Link>

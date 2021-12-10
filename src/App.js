@@ -3,8 +3,8 @@ import React, { useEffect, useState } from 'react';
 import Header from './components/Header.js';
 import BookList from './components/BookList.js';
 import BookForm from './components/BookForm.js';
-import Home from './components/Home.js'
-import BookDetail from './components/BookDetail.js'
+import Home from './components/Home.js';
+import BookDetail from './components/BookDetail.js';
 import { Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -21,7 +21,6 @@ function App() {
     setBooks(newBookArray);
   }
 
-  
   function handleAddFavorite(favorite) {
     setBooks(
       books.map((book) =>
@@ -47,16 +46,13 @@ function App() {
   // }
 
   function handleAddDetail(detail) {
-    setBooks([...books, detail])
+    setBooks([...books, detail]);
   }
 
-
-  
-// 
+  //
   function handleDeleteBook(deletedBook) {
-    setBooks(books.filter(book=> book.id !== deletedBook.id))
-   }
-
+    setBooks(books.filter((book) => book.id !== deletedBook.id));
+  }
 
   return (
     <div className="App">
@@ -69,23 +65,28 @@ function App() {
           )}
         />
 
-        <Route 
-          path="/books/:id" 
-          component={() => ( <BookDetail
-           handleAddDetail={handleAddDetail}
-           books={books} 
-           /> )} />
+        <Route
+          path="/books/:id"
+          component={() => (
+            <BookDetail handleAddDetail={handleAddDetail} books={books} />
+          )}
+        />
 
-        <Route path="/books" component={() => <BookList 
-          books={books} 
-          onAddFavorite={handleAddFavorite} 
-          onRemoveFavorite={handleRemoveFavorite}
-          onDeleteBook={handleDeleteBook}
-          />} />
+        <Route
+          path="/books"
+          component={() => (
+            <BookList
+              books={books}
+              onAddFavorite={handleAddFavorite}
+              onRemoveFavorite={handleRemoveFavorite}
+              onDeleteBook={handleDeleteBook}
+            />
+          )}
+        />
 
         <Route path="/" component={Home}>
           <Home />
-        </Route>  
+        </Route>
       </Switch>
     </div>
   );

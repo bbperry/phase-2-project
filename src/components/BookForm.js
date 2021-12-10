@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 function BookForm({ handleAddBook }) {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
@@ -17,7 +16,6 @@ function BookForm({ handleAddBook }) {
       image,
     };
 
-
     fetch('http://localhost:3000/books', {
       method: 'POST',
       headers: {
@@ -31,11 +29,12 @@ function BookForm({ handleAddBook }) {
       });
   }
 
-  
   return (
     <section class="container">
       <form class="ui form" onSubmit={handleSubmit}>
-        <h4 id="formH" class="ui dividing header">Add a New Book</h4>
+        <h4 id="formH" class="ui dividing header">
+          Add a New Book
+        </h4>
         <label htmlFor="title">Title</label>
         <input
           required
@@ -45,9 +44,6 @@ function BookForm({ handleAddBook }) {
           value={title}
           onChange={(event) => setTitle(event.target.value)}
         />
-        {/* {addTitle.length === 0 ? (
-          <p style={{ color: "red" }}>You must provide a name</p>
-        ) : null} */}
         <label htmlFor="author">Author</label>
         <input
           required
@@ -56,14 +52,6 @@ function BookForm({ handleAddBook }) {
           value={author}
           onChange={(event) => setAuthor(event.target.value)}
         />
-
-        {/* <label htmlFor="category">Category</label>
-        <input
-        placeholder="Category"
-          type="text"
-          value={category}
-          onChange={(event) => setCategory(event.target.value)}
-        /> */}
         <label htmlFor="category">Category</label>
         <select
           class="ui fluid dropdown"
@@ -73,8 +61,9 @@ function BookForm({ handleAddBook }) {
           value={category}
           onChange={(event) => setCategory(event.target.value)}
         >
-          {/* <option value="All">All</option> */}
-          <option value="" disabled selected hidden>Please Choose...</option>
+          <option value="" disabled selected hidden>
+            Please Choose...
+          </option>
           <option value="Phonology & Articulation">
             Phonology & Articulation
           </option>

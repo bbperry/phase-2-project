@@ -113,8 +113,24 @@ width: 40%;
   }
 
   .homePage {
-    width: 75%;
     text-align: center;
+    height: 300px;
+    width: 500px;
+    background-color: rgb(250, 178, 107);
+    border-radius: 20px;
+    border: solid, yellow;
+    border:5px;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    margin: auto
   }
 
+.bookDetail {
+  margin:15px;
+  margin-bottom:15px;
+}
   
+.bookDetail h2 {
+  text-decoration: underline;
+}
