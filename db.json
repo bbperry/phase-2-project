@@ -5,21 +5,25 @@
       "title": "In The Small Small Pond",
       "author": "Denise Fleming",
       "category": "Phonology & Articulation",
-      "image": "https://covers.openlibrary.org/b/isbn/0805059830-L.jpg"
+      "image": "https://covers.openlibrary.org/b/isbn/0805059830-L.jpg",
+      "favorite": false
     },
     {
       "id": 2,
       "title": "Dragons Love Tacos",
       "author": "Adam Rubin",
       "category": "Phonology & Articulation",
-      "image": "https://covers.openlibrary.org/b/isbn/0525428887-L.jpg"
+      "image": "https://covers.openlibrary.org/b/isbn/0525428887-L.jpg",
+      "favorite": false,
+      "detail": "tacos recipes"
     },
     {
       "id": 3,
       "title": "The Very Busy Spider",
       "author": "Eric Carle",
       "category": "Phonology & Articulation",
-      "image": "https://covers.openlibrary.org/b/isbn/0399229191-L.jpg"
+      "image": "https://covers.openlibrary.org/b/isbn/0399229191-L.jpg",
+      "favorite": false
     },
     {
       "id": 4,

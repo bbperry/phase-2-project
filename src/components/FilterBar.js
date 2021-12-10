@@ -15,7 +15,7 @@ function FilterBar({ setBookSearch, setSelectedCategory, selectedCategory }) {
 
       <select
         id="filter"
-        class="ui animated fade button teal"
+        className="ui animated fade button teal"
         name="filter"
         value={selectedCategory}
         onChange={(e) => setSelectedCategory(e.target.value)}
