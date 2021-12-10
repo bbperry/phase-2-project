@@ -57,6 +57,10 @@
   
 }
 
+.bookShelfDiv {
+  border: solid yellow;
+}
+
 .bookShelfDiv h3 {
   color: white;
   text-decoration: underline;

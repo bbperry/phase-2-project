@@ -16,6 +16,7 @@ function BookDetail({ handleAddDetail }) {
   }, [id]);
 
   function handleSubmitDetails() {
+    
     fetch(`http://localhost:3000/books/${book.id}`, {
       method: 'PATCH',
       headers: {

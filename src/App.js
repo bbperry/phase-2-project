@@ -37,17 +37,17 @@ function App() {
     );
   }
 
-  // function handleAddDetail(detail) {
-  //   setBooks(
-  //     books.map((book) =>
-  //       book.id === detail.id ? { ...book, detail } : book
-  //     )
-  //   );
-  // }
-
   function handleAddDetail(detail) {
-    setBooks([...books, detail]);
+    setBooks(
+      books.map((book) =>
+        book.id === detail.id ? { ...book, detail } : book
+      )
+    );
   }
+
+  // function handleAddDetail(detail) {
+  //   setBooks([...books, detail]);
+  // }
 
   //
   function handleDeleteBook(deletedBook) {

@@ -103,7 +103,8 @@
       "title": "Rosies Walk",
       "author": "Pat Hutchins",
       "category": "Concepts & Prepositions",
-      "image": "https://covers.openlibrary.org/b/isbn/0020437501-L.jpg"
+      "image": "https://covers.openlibrary.org/b/isbn/0020437501-L.jpg",
+      "favorite": false
     },
     {
       "id": 16,
@@ -222,7 +223,8 @@
       "title": "Too Many Tamales",
       "author": "Gary Soto",
       "category": "Special Occasions",
-      "image": "https://covers.openlibrary.org/b/isbn/0698114124-L.jpg"
+      "image": "https://covers.openlibrary.org/b/isbn/0698114124-L.jpg",
+      "favorite": false
     },
     {
       "title": "Where the Wild Things Are",
